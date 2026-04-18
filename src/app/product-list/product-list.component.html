@@ -1,0 +1,31 @@
+<h5 class="mb-3">Product List</h5>
+
+<table class="table table-bordered" style="width: auto; min-width: 500px;">
+  <thead>
+    <tr class="table-light">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="products.length === 0">
+      <td colspan="5" class="text-center text-muted">No products available.</td>
+    </tr>
+    <tr *ngFor="let product of products">
+      <td>{{ product.pid }}</td>
+      <td>{{ product.pname }}</td>
+      <td>{{ product.price | number:'1.2-2' }}</td>
+      <td>{{ product.category }}</td>
+      <td>
+        <button
+          class="btn btn-danger btn-sm"
+          (click)="deleteProduct(product.pid)">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

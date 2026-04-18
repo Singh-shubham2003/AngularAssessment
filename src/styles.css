@@ -1,0 +1,13 @@
+/* Global Styles */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  text-decoration: underline;
+}

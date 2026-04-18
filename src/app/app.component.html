@@ -1,0 +1,33 @@
+<!-- Top header bar matching the screenshot -->
+<div class="bg-white border-bottom py-2">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-end">
+      <h4 class="mb-0 fw-bold text-dark">Welcome to Ecommerce!</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation bar with underlined links -->
+<div class="bg-light border-bottom py-1 px-3">
+  <div class="container-fluid">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link text-primary p-1 me-3"
+           style="text-decoration: underline;"
+           routerLink="/search"
+           routerLinkActive="fw-bold">SearchForm</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary p-1"
+           style="text-decoration: underline;"
+           routerLink="/showlist"
+           routerLinkActive="fw-bold">ProductList</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="container-fluid px-3 pt-3">
+  <router-outlet></router-outlet>
+</div>
